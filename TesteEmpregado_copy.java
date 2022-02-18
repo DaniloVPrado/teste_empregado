@@ -13,5 +13,6 @@ public class TesteEmpregado {
         e2.setSalario(0.7);
         e3.setSalario(1500);
         e3.setBonus(250);
+        
     }
 }
