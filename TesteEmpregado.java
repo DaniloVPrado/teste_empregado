@@ -1,3 +1,8 @@
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
+
 public class TesteEmpregado {
     public static void main(String[] args) {
         Empregado e1 = new Empregado();
@@ -13,6 +18,11 @@ public class TesteEmpregado {
         e2.setSalario(0.7);
         e3.setSalario(1500);
         e3.setBonus(250);
-        
+
+        List <Empregado> emps = Arrays.asList(e1, e2, e3);
+        for (Empregado e: emps){
+            System.out.println(e.calcularSalario());
+        }
+
     }
 }
